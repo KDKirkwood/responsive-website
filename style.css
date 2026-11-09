@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* navigation bar */
+nav {
+  background-color: #333;
+  padding: 12px 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* splash screen on the home page */
+.splash {
+  background-color: #2a6f97;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+/* main content area */
+.container {
+  padding: 20px;
+}
+
+/* learn more section */
+.learn-more {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* about page blocks */
+.blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block img {
+  width: 100%;
+  display: block;
+}
+
+/* 800px or less */
+@media (max-width: 800px) {
+  .paragraphs {
+    display: block;
+  }
+
+  .paragraphs p {
+    margin: 8px 0;
+  }
+
+  .blocks {
+    display: block;
+  }
+
+  .block {
+    width: 100%;
+    margin: 8px 0;
+  }
+}
+
+/* more than 800px */
+@media (min-width: 801px) {
+  .paragraphs {
+    display: flex;
+  }
+
+  .paragraphs p {
+    flex: 1;
+    margin: 8px;
+  }
+
+  .block {
+    width: 250px;
+    margin: 8px;
+  }
+}
